@@ -1,0 +1,262 @@
+@import url("all.min.css");
+@import url("bootstrap.min.css");
+@import url("style-signup.css");
+@import url("style-login.css");
+@import url("style-Add-to-Cart.css");
+@import url("style-Add-to-Cart-women.css");
+@import url("style-grid-view.css");
+
+/* Header CSS */
+
+    /* First Navbar CSS */
+
+    .top-navbar{
+        background-color: #484848;
+    }
+    .top-navbar h6{
+        color: #9f9e9c;
+    }
+    .top-navbar-search{
+        color: white;
+        background-color: #18d96e;
+    }
+    .top-navbar-search:hover{
+        color: white;
+        background-color: #208328;
+    }
+
+
+
+    /* Second Navbar CSS */
+
+    .navbar-light .navbar-nav .nav-link{
+        color: black;
+    }
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:hover{
+        color: #18d96e;
+        border-bottom: 2px solid #18d96e;
+        padding: 20px;
+        margin: -12px;
+    }
+    .cart-color:hover{
+        color: #18d96e;
+    }
+    .dropdown_menu{
+        position: relative;
+    }
+    .dropdown_menu:hover .dropdown_list{
+        display: block;
+    }
+    .dropdown_list{
+        position: absolute;
+        top: 54px;
+        left: 0;
+        background-color: #ffffff;
+        min-width: 80px;
+        display: none;
+        z-index: 1;
+    }
+    .dropdown_list ul{
+        padding: 12px;
+    }
+    .dropdown_list ul li{
+        display: block;
+    }
+    
+
+/* Second Section - Banner & Carousel */
+
+.Second-section{
+    background-color: #fdd8df;
+}
+.Second-section .button1{
+    background-color: #ffffff;
+    width: 120px;
+}
+.Second-section .button1:hover{
+    background-color: #0f9da0ec;
+    color: white;
+}
+.Second-section .button2{
+    background-color: #18d96e;
+    width: 120px;
+}
+.Second-section .button2:hover{
+    background-color: #208328;
+    color: white;
+}
+.carousel-text-p-color{
+    color: #c48aa0;
+    font-size: small;
+}
+.carousel-text-p-size{
+    font-size: 13px;
+    color: #a7afb9;
+}
+.carousel-control-prev-icon{
+    background-image: url("../image/left-icon.png");
+}
+.carousel-control-next-icon{
+    background-image: url("../image/right-icon.png");
+}
+
+/* Third Section - Shipping & Suupport CSS */
+
+
+.shipping-bg{
+    background-color: #18d96e;
+    border-radius: 50%;
+}
+.retrune-support-color{
+    color: #18d96e;
+}
+
+/* Common CSS For Forth, Fifth, Six & Seven Section */
+
+
+.New-product-image{
+    position: relative;
+    transition: 1s;
+}
+.New-product-image-btn{
+    position: absolute;
+    top: 70%;
+    left: 70px;
+    background-color: #18d96e;
+    display: none;   
+}
+.New-product-image-btn:hover{
+    background-color: #208328;
+    color: white !important;
+}
+.New-product-image:hover{
+    transform: scale(1.15);
+}
+.New-product-image:hover .New-product-image-btn{
+    display: block;
+    /* transition: 5s; */
+}
+.model-img-size{
+    height: 360px;
+    width: 260px;
+}
+.products-secton .card-title a:hover{
+    color: #18d96e !important;
+}
+.card-footer-btn{
+    font-size: small;
+    background-color: #18d96e;
+}
+.card-footer-btn:hover{
+    background-color: #208328;
+    color: #ffffff;
+}
+
+
+/* Footer CSS */
+
+.footer-hr{
+    height: 20px;
+    background-color: #18d96e;
+
+}
+
+    /* Top Footer */
+
+    .footer-text-color,
+    .footer-text-color a{
+        color: #18d96e;
+    }
+    .text-justyfy{
+        text-align: justify;
+    }
+
+    /* Bottom Footer */
+
+    .bottom-footer{
+        background-color: #484848;
+    }
+
+
+
+    /* Media Query */
+        
+        /* Navbar */
+
+        @media (max-width: 991.98px){ 
+
+            /* First Navbar */
+
+            #First-Navbar .navbar-nav .nav-item .nav-link{
+                margin-left: 0;
+            }
+            #First-Navbar .search{
+                padding-bottom: 7px;
+            }
+
+            /* Second Navbar */
+
+            #Second-Navbar .navbar-nav .nav-item .nav-link.active{
+                border-bottom: none;
+            }
+            #Second-Navbar .navbar-nav .nav-item .nav-link:focus,
+            #Second-Navbar .navbar-nav .nav-item .nav-link:hover{
+                border-bottom: none;
+                padding-left: 12px;
+            }
+            /* #Second-Navbar .border-start, */
+
+            #Second-Navbar .border-start,
+            #Second-Navbar .border-end{
+                border: none !important;
+            }
+            .navbar-collapse .navbar-nav .nav-link.active{
+                margin-left: -20px;
+            }
+            .navbar-finance-icon{
+                margin-left: 10px;
+                margin-top: 3px;
+            }
+            .navbar-flag,
+            .navbar-cart{
+                margin-left: -6px;
+                margin-top: 3px;
+            }
+            .dropdown_menu:hover .dropdown_list{
+                display: none;
+            }
+
+            /* Carousel Section */
+            
+            .carousel-image{
+                width: 50%;
+            }
+
+            /* Third Section */
+
+
+            /* Fourth, Fifth & Six Section */
+
+            .New-product-image:hover{
+                transform: none;
+            }
+            .New-product-image:hover .New-product-image-btn{
+                display: none;
+            }
+            .model-img-size{
+                height: 100%;
+                width: 100%;
+            }
+
+            /* Footer */
+
+            .footer-account-info{
+                margin-top: 20px;
+            }
+            .payment-logo{
+                margin-bottom: 30px;
+            }
+
+
+        }

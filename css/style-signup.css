@@ -1,0 +1,181 @@
+@import url("all.min.css");
+@import url("bootstrap.min.css");
+
+/* Header CSS */
+
+    /* First Navbar CSS */
+
+    .top-navbar{
+        background-color: #484848;
+    }
+    .top-navbar h6{
+        color: #9f9e9c;
+    }
+    .top-navbar-search{
+        color: white;
+        background-color: #18d96e;
+    }
+    .top-navbar-search:hover{
+        color: white;
+        background-color: #208328;
+    }
+
+
+
+    /* Second Navbar CSS */
+
+    .navbar-light .navbar-nav .nav-link{
+        color: black;
+        padding-bottom: 10px;
+    }
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:hover{
+        color: #18d96e;
+        border-bottom: 2px solid #18d96e;
+        padding: 20px;
+        margin: -12px;
+    }
+    .cart-color:hover{
+        color: #18d96e;
+    }
+    .dropdown_menu{
+        position: relative;
+    }
+    .dropdown_menu:hover .dropdown_list{
+        display: block;
+    }
+    .dropdown_list{
+        position: absolute;
+        top: 54px;
+        left: 0;
+        background-color: #ffffff;
+        min-width: 80px;
+        display: none;
+        z-index: 1;
+    }
+    .dropdown_list ul{
+        padding: 12px;
+    }
+    .dropdown_list ul li{
+        display: block;
+    }
+    
+
+
+/* Sign Up Section */
+
+.signup-section span{
+    color: red;
+}
+.signup-fieldset{
+    padding: 5px 20px;
+    border: 1px solid #beb6b6;
+}
+
+.legend-text-info,
+.legend-text-login{
+    font-size: 18px;
+    float: initial;
+    width: 17%;
+    padding-left: 10px;
+    border: 1px solid #beb6b6;
+}
+.legend-text-login{
+    width: 15%;
+}
+
+
+/* Footer CSS */
+
+.footer-hr{
+    height: 20px;
+    background-color: #18d96e;
+}
+
+    /* Top Footer */
+
+    .footer-text-color,
+    .footer-text-color a{
+        color: #18d96e;
+    }
+    .text-justyfy{
+        text-align: justify;
+    }
+
+    /* Bottom Footer */
+
+    .bottom-footer{
+        background-color: #484848;
+    }
+
+
+
+    /* Media Query */
+        
+        /* Navbar */
+
+        @media (max-width: 991.98px){ 
+
+            /* First Navbar */
+
+            #First-Navbar .navbar-nav .nav-item .nav-link{
+                margin-left: 0;
+            }
+            #First-Navbar .search{
+                padding-bottom: 7px;
+            }
+
+            /* Second Navbar */
+
+            #Second-Navbar .navbar-nav .nav-item .nav-link.active{
+                border-bottom: none;
+            }
+            #Second-Navbar .navbar-nav .nav-item .nav-link:focus,
+            #Second-Navbar .navbar-nav .nav-item .nav-link:hover{
+                border-bottom: none;
+                padding-left: 12px;
+            }
+
+            #Second-Navbar .border-start,
+            #Second-Navbar .border-end{
+                border: none !important;
+            }
+            .navbar-collapse .navbar-nav .nav-link.active{
+                margin-left: -20px;
+            }
+            .navbar-finance-icon{
+                margin-left: 10px;
+                margin-top: 3px;
+            }
+            .navbar-flag,
+            .navbar-cart{
+                margin-left: -6px;
+                margin-top: 3px;
+            }
+            .dropdown_menu:hover .dropdown_list{
+                display: none;
+            }
+
+
+            /* Sign Up Section */
+
+            .legend-text-info{
+                width: 60%;
+            }
+            .legend-text-login{
+                width: 52%;
+            }
+
+            
+
+            /* Footer */
+
+            .footer-account-info{
+                margin-top: 20px;
+            }
+            .payment-logo{
+                margin-bottom: 30px;
+            }
+
+
+        }
